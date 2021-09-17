@@ -1,2 +1,2 @@
-#Evil Hangman
+# Evil Hangman
 for cs240
