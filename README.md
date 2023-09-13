@@ -5,6 +5,6 @@ It is possible to win.
 To compile and run:
 ```sh
 javac ./*.java
-java EvilHangman ./dict.txt
+java EvilHangman 5 ./dict.txt
 ```
-Where `dict.txt` is the total word bank, one word per line
+Where `5` is the length of the target word and `dict.txt` is the word list file, one word per line
