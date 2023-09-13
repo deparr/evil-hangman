@@ -5,6 +5,5 @@ It is possible to win.
 To compile and run:
 ```sh
 javac ./*.java
-java EvilHangman 5 ./dict.txt
+java EvilHangman <word-list-file> <target-word-length> <guess-limit>
 ```
-Where `5` is the length of the target word and `dict.txt` is the word list file, one word per line
