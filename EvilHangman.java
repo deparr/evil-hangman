@@ -1,4 +1,5 @@
-package hangman;
+import hangman.EvilHangmanGame;
+import hangman.GuessAlreadyMadeException;
 import java.io.File;
 import java.util.Scanner;
 import java.util.Set;
@@ -15,7 +16,7 @@ public class EvilHangman {
             System.out.println("Need non-zero value for guesses (argv[2])");
             return;
         }
-        File dict = new File(System.getProperty("user.dir") + "\\" + dictFilename);
+        File dict = new File(System.getProperty("user.dir") + System.getProperty("file.separator") + dictFilename);
 
         // Initialize game using given dictionary file
         EvilHangmanGame hangman = new EvilHangmanGame();
@@ -96,6 +97,5 @@ public class EvilHangman {
         sc.close();
         return;
     }
-
 
 }
